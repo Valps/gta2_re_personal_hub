@@ -1,3 +1,4 @@
+```
 9.6     10.5
 4D1170  WinMain_5E53F0
 
@@ -25,10 +26,12 @@
 47F710  miss2_0x11C::sub_504EE0		(light stuff)
 47C6A0  miss2_0x11C::SCRCMD_ADD_NEW_BLOCK_50CAB0
 47C6F0  miss2_0x11C::SCRCMD_ROAD_ON_OFF_50CB20
+4803C0  miss2_0x11C::SCRCMD_EMERG_LIGHTS_50F450
 47AB80  miss2_0x11C::sub_50ACF0
 47B1D0  miss2_0x11C::sub_50B4F0
 47ECE0  miss2_0x11C::launch_mission_5119A0
 47DAD0  miss2_0x11C::sub_50F270
+47D170  miss2_0x11C::SCRCMD_CHECK_CAR_SPEED_50E360
 
 481960  frosty_pasteur_0xC1EA8::ctor_512CE0
 481890  frosty_pasteur_0xC1EA8::Update_512160
@@ -99,12 +102,12 @@
 439810  Ped::sub_46A850
 43F180  Ped::sub_462B80
 445330  Ped::sub_462280
-445230  Ped::sub_46F390
+445230  Ped::ManageWeapon_46F390
 4454E0  Ped::sub_462E70
 4454D0  Ped::sub_4632E0
 444D00  Ped::sub_463FB0
 43FEE0  Ped::sub_46D0D0
-4411B0  Ped::sub_46F9D0
+4411B0  Ped::Kill_46F9D0
 43D880  Ped::sub_46F720
 4411B0  Ped::sub_46F9D0		[kill char]
 436920  Ped::sub_463830
@@ -115,20 +118,24 @@
 435EB0  Ped::SetVisible
 435E90  Ped::SetOnFire
 433250  Ped::DrawFlamesAndStartScreamTimer
+4454E0  Ped::sub_462E70
+445330  Ped::sub_462280
+434D70  Ped::GetWeaponFromPed_46F110
+4333A0  Ped::sub_45EDE0
 
 43DB40  Char_C::sub_470A50
 445A20  Char_C::sub_4703F0
 43DFB0  Char_C::sub_470F90
 43E080  Char_C::DoIanTest_471060
+440CC0  Char_C::SpawnDummies_46EB60
 
 49C460  Char_B4::sub_545720
 496880  Char_B4::state_8_5520A0
 495540  Char_B4::sub_54C500
 495220  Char_B4::sub_54C1A0
-
+497DF0  Char_B4::sub_546360
 
 461360  nostalgic_ellis_0x28::sub_4D6D70
-
 
 4820D0  youthful_einstein::sub_516590
 
@@ -138,7 +145,6 @@
 41C600  sound_obj::sub_426790
 41C000  sound_obj::sub_427220
 4B2BC0  sound_obj::sub_57ECB0
-
 
 4BA6C0  Car_14_18::sub_59DDF0
 4BA720  Car_14_18::sub_59DE80
@@ -189,15 +195,12 @@
 
 44B8B0  Montana::Draw_495560	[has inlines]
 
-
 ------------------------------------------------
 
 432FC0  CarInfo_808::sub_454A00
 432D10  CarInfo_808::sub_4546D0
 41D800  sub_430A30
 41D620  sub_430C70
-
-
 
 40FBE0  Car_A4_10::sub_408220
 4BEF70  Object_3C::sub_5A6F70
@@ -206,7 +209,6 @@
 4B4E60  Car_14::sub_583670
 4B4A60  Car_14::sub_5832C0
 4B4A00  Car_14::sub_583260
-
 
 4CAB50  Hud_2B00::sub_5D69D0
 4CA890  Hud_Arrow_7C_Array::sub_5D0FD0
@@ -231,17 +233,13 @@
 472670  sub_4F7540
 40ECB0  sub_405CE0
 
-
 473010  Ambulance_110::sub_4FA330
 4740B0  Ambulance_110::sub_4FA790
 473E00  Ambulance_110::sub_4FA500
 
-
-
 49D7A0  Orca_2FD4::sub_5552B0
 49CF10  Orca_2FD4::sub_5548C0
 49CB60  Orca_2FD4::sub_554110
-
 
 4C7CC0  ArrowTrace_24::sub_5D03C0
 
@@ -256,21 +254,17 @@
 4CAC60  Hud_2B00::ctor_5D6CD0
 4CA440  Hud_2B00::DrawGui_5D6860
 
-
 489BC0  Garage_48::sub_534700
 489B10  Garage_48::sub_534650
-
 
 484AF0  Object_5C::ctor_529430
 4854C0  Object_5C::sub_52A240
 485180  Object_5C::sub_52A2C0
 484E00  Object_5C::sub_529C00
 
-
 45DA80  Gang_144::sub_4BEEA0
 
 4CBA50  sub_5D7EC0
-
 
 4512D0  Tango_54::Service_4A85F0
 450F10  Tango_28::Service_4A81F0
@@ -303,9 +297,11 @@
 4AEF70  Police_7B8::sub_570270
 4AA030  Police_7B8::sub_56FBD0
 4AEE70  Police_7B8::sub_577370
+4AA710  Police_7B8::SpawnWalkingGuard_570320
+4A9500  Police_7B8::sub_56F4D0
 
-4AD600  Police_38::sub_575590   (switch cases!)
-4AC080  Police_38::sub_572340
+4AD600  Police_38::sub_575590   	(switch cases!)
+4AC080  Police_38::State3_Arrest_572340
 4AADD0  Police_38::sub_570BF0
 4ABA30  Police_38::sub_575270
 4A97C0  Police_38::sub_570AB0
@@ -313,6 +309,7 @@
 4ADB70  PoliceRoadblock_A4::CreateRoadblock_575FF0
 
 4415E0  Dummies_470330
+4404F0  SpawnPedestrianAt_46E380
 
 429FC0  Car_BC::sub_443330  (TODO: get more 9.6f function addresses)
 426220  Car_BC::sub_4426D0  (TODO: get more 9.6f function addresses)
@@ -323,6 +320,18 @@
 429E50  Car_BC::sub_443170
 429E50  Car_BC::sub_443170
 425A40  Car_BC::sub_43AFE0
+422D20  Car_BC::ActivateEmergencyLights_43C920
+422D80  Car_BC::DeactivateEmergencyLights_43C9D0
+
+4A4570  Car_B0::sub_562FE0
+4A3120  Car_B0::sub_55F330
+4A2E30  Car_B0::sub_560F20
+49DD10  Car_B0::sub_559B40
+49ED60  Car_B0::sub_563350
+
+40FBE0  Car_A4_10::sub_408220
+40FB20  Car_A4_10::sub_408140
+40F900  Car_A4_10::sub_407CE0
 
 4C0820  gtx_0x106C::LoadSty_5AB750
 4C05B0  gtx_0x106C::LoadChunk_5AB4B0
@@ -330,3 +339,4 @@
 4BF840  gtx_0x106C::sub_5AAB30
 
 4CAEB0  sub_5D7CB0
+```
