@@ -8,7 +8,7 @@
 45C3B0  Game_0x40::sub_4B9640
 45A650  Game_0x40::sub_4B9380
 45C4D0  Game_0x40::ctor_4B9DE0
-449C40  Game_0x40::sub_4B9410
+45C1F0  Game_0x40::sub_4B9410
 45A5A0  Game_0x40::Draw_4B92D0
 45BC10  Game_0x40::is_point_on_screen_4B9A80
 
